@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "title": "My First Post",
+        "description": "This is my first post",
+        "content": "This is my first post",
+        "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "status": true,
+        "isPublished": false,
+        "publishedDate": "2022-01-01T00:00:00.000Z",
+        "publishedBy": 1,
+        "created": {
+            "Date": "2022-01-01T00:00:00.000Z",
+            "cratedBy": 1
+        },
+        "updated": {
+            "Date": "2022-01-01T00:00:00.000Z",
+            "updatedBy": 1
+        },
+        "deleted": {
+            "Date": "2022-01-01T00:00:00.000Z",
+            "deletedBy": 1
+        },
+        "tags": [
+            1
+        ],
+        "author": 1,
+        "comments": [],
+        "likes": [],
+        "views": []
+    },
+    {
+        "id": 2,
+        "title": "My Second Post",
+        "description": "This is my second post",
+        "content": "This is my second post",
+        "image": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        "status": true,
+        "isPublished": true,
+        "publishedDate": "2022-01-01T00:00:00.000Z",
+        "publishedBy": 1,
+        "created": {
+            "Date": "2022-01-01T00:00:00.000Z",
+            "cratedBy": 1
+        },
+        "updated": {
+            "Date": "2022-01-01T00:00:00.000Z",
+            "updatedBy": 1
+        },
+        "deleted": {
+            "Date": "2022-01-01T00:00:00.000Z",
+            "deletedBy": 1
+        },
+        "category": 1,
+        "author": 1,
+        "comments": [],
+        "likes": [],
+        "views": []
+    }
+]

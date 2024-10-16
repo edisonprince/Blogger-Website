@@ -1,0 +1,45 @@
+.loader-container {
+  background-color: var(--background-color) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width: 100vw;  
+  position: fixed; 
+  top: 0;
+  z-index: 3000;
+  left: 0;
+}
+
+.loader {
+  width: 10vw;
+  max-width: 100px; 
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 0.8vw solid #0000;
+  border-right-color: #ffa50097;
+  position: relative;
+  animation: l24 1s infinite linear;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: calc(-0.8vw);
+  border-radius: 50%;
+  border: inherit;
+  animation: inherit;
+  animation-duration: 2s;
+}
+
+.loader:after {
+  animation-duration: 4s;
+}
+
+@keyframes l24 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+

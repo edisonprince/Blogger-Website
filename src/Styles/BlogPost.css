@@ -1,0 +1,69 @@
+.Blog-post-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 30px;
+  border: 2px solid var(--border-color) !important;
+  padding: 20px;
+}
+.Blog-post-card {
+  background-color: var(--body-background);
+  color: var(--text-color);
+  cursor: pointer;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 20px;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card-img-Large {
+  max-height: 450px;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.pagination {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.page-item .page-link {
+  background-color: var(--background-color);
+  color: var(--highlited-color);
+  margin: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+}
+
+.page-item .page-link:hover {
+  background-color: var(--hover-background);
+  color: var(--hover-color);
+}
+
+.page-item.active .page-link {
+  background-color: var(--highlited-color);
+  color: var(--text-color);
+}
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  cursor: none;
+}
+
+
+.like-comment-button button {
+  margin: 5px;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.like-comment-button button.liked {
+  transform: scale(1.3);
+  color: red !important; /* Change the icon color to red when liked */
+}

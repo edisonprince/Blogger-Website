@@ -1,0 +1,58 @@
+.create-data {
+  gap: 10px;
+}
+
+.create-data-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 10px;
+}
+
+.create-data-container label {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.create-data-container textarea,
+.create-data-container select,
+.create-data-container input {
+  border-radius: 10px;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.create-data-container textarea,
+.create-data-container select,
+.create-data-container input:focus {
+  border: none;
+}
+.create-data-container textarea,
+.create-data-container select,
+.create-data-container input:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-data-container-button {
+  border: none;
+  background-color: var(--button-active-background);
+  color: var(--button-text-color);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 40px;
+}
+
+.create-data-container-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-data-container-right {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border-radius: 10px;
+}

@@ -1,0 +1,158 @@
+[
+    {
+      "id": "1",
+      "title": "My First Post",
+      "content": "This is my first post  to explore the world This is my first post  to explore the world This is my first post  to explore the world",
+      "image": "https://t4.ftcdn.net/jpg/00/65/48/25/360_F_65482539_C0ZozE5gUjCafz7Xq98WB4dW6LAhqKfs.jpg",
+      "category": "Travel",
+      "publishedBy": null,
+      "publishedDate": "2024-11-24",
+      "created": {
+        "Date": "2024-10-02T17:30:27.498Z",
+        "createdBy": "a23d491e-5232-48ca-96ca-7ba14293dc30"
+      },
+      "updated": {
+        "Date": "2024-10-03T05:03:41.373Z",
+        "updatedBy": "1"
+      },
+      "status": true,
+      "isPublished": false,
+      "comments": 4,
+      "likes": 10,
+      "views": 50,
+      "deleted": {
+        "Date": null,
+        "deletedBy": null
+      }
+    },
+    {
+      "id": "2",
+      "title": "Myffjvjjffj",
+      "content": "This ",
+      "image": "https://cdn.pixabay.com/photo/2021/08/14/04/15/mountains-6544522_1280.jpg",
+      "status": true,
+      "isPublished": false,
+      "publishedDate": "2024-10-25",
+      "publishedBy": null,
+      "created": {
+        "Date": "2024-10-03T04:30:41.894Z",
+        "createdBy": "a23d491e-5232-48ca-96ca-7ba14293dc30"
+      },
+      "updated": {
+        "Date": "2024-10-03T04:30:41.894Z",
+        "updatedBy": "a23d491e-5232-48ca-96ca-7ba14293dc30"
+      },
+      "deleted": {
+        "Date": null,
+        "deletedBy": null
+      },
+      "category": "Entertainment",
+      "comments": 0,
+      "likes": 0,
+      "views": 0
+    },
+    {
+      "id": "810bf00a-1b6b-4cdc-9d1e-3cbd98161229",
+      "title": "EdisonPrince",
+      "content": "This is thee post of new world",
+      "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg",
+      "status": true,
+      "isPublished": false,
+      "publishedDate": "2024-10-26",
+      "publishedBy": null,
+      "created": {
+        "Date": "2024-10-01T07:16:17.984Z",
+        "createdBy": "1"
+      },
+      "updated": {
+        "Date": "2024-10-01T07:16:17.984Z",
+        "updatedBy": "1"
+      },
+      "deleted": {
+        "Date": null,
+        "deletedBy": null
+      },
+      "category": "Travel",
+      "comments": 0,
+      "likes": 1,
+      "views": 0,
+      "liked": false
+    },
+    {
+      "id": "0daa0d50-0751-4e9f-b011-b5e7521ce3f8",
+      "title": "Sample",
+      "content": "sample",
+      "image": "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg",
+      "category": "Entertainment",
+      "publishedDate": "2024-10-17",
+      "created": {
+        "Date": "2024-10-03T06:33:04.192Z",
+        "createdBy": "b129863a-91dd-435b-8adc-4d25ca853145"
+      },
+      "updated": {
+        "Date": "2024-10-03T06:33:04.192Z",
+        "updatedBy": "b129863a-91dd-435b-8adc-4d25ca853145"
+      },
+      "status": true,
+      "isPublished": false,
+      "comments": 0,
+      "likes": 1,
+      "views": 0,
+      "deleted": {
+        "Date": null,
+        "deletedBy": null
+      }
+    },
+    {
+      "id": "f438bb65-9514-4c6a-9d54-8fbf22649e81",
+      "title": "Sample Testing",
+      "content": "Edison is not just a name",
+      "image": "https://gratisography.com/wp-content/uploads/2024/01/gratisography-covered-in-confetti-800x525.jpg",
+      "category": "Entertainment",
+      "publishedDate": "2024-10-27",
+      "created": {
+        "Date": "2024-10-04T06:43:48.771Z",
+        "createdBy": "1"
+      },
+      "updated": {
+        "Date": "2024-10-04T06:46:05.502Z",
+        "updatedBy": "1"
+      },
+      "status": true,
+      "publishedBy": null,
+      "isPublished": false,
+      "comments": 0,
+      "likes": 1,
+      "views": 0,
+      "deleted": {
+        "Date": null,
+        "deletedBy": null
+      }
+    },
+    {
+      "id": "35805f59-8dc5-4e10-a49f-716c258209d8",
+      "title": "My Post",
+      "content": "OpenAI is an American artificial intelligence (AI) research organization founded in December 2015 and headquartered in San Francisco, California. Its mission is to develop \"safe and beneficial\" artificial general intelligence (AGI), which it defines as \"highly autonomous systems that outperform humans at most economically valuable work\".[5] As a leading organization in the ongoing AI boom,[6] OpenAI is known for the GPT family of large language models, the DALL-E series of text-to-image models, and a text-to-video model named Sora.[7][8] Its release of ChatGPT in November 2022 has been credited with catalyzing widespread interest in generative AI.\n\nThe organization consists of the non-profit OpenAI, Inc.,[9] registered in Delaware, and its for-profit subsidiary introduced in 2019, OpenAI Global, LLC.[10] Microsoft owns roughly 49% of OpenAI's equity, having invested US$13 billion.[11] It also provides computing resources to OpenAI through its Microsoft Azure cloud platform.[12]",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/383px-OpenAI_Logo.svg.png",
+      "category": "Entertainment",
+      "publishedDate": "2024-10-07",
+      "created": {
+        "Date": "2024-10-07T06:09:02.580Z",
+        "createdBy": "600a3e09-4c74-4219-9fb5-39bef9b3f515"
+      },
+      "updated": {
+        "Date": "2024-10-07T06:09:02.580Z",
+        "updatedBy": "600a3e09-4c74-4219-9fb5-39bef9b3f515"
+      },
+      "status": true,
+      "publishedBy": null,
+      "isPublished": false,
+      "comments": 0,
+      "likes": 1,
+      "views": 0,
+      "deleted": {
+        "Date": null,
+        "deletedBy": null
+      }
+    }
+  ]

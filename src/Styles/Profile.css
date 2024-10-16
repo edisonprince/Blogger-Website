@@ -1,0 +1,66 @@
+.profile-container {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.cover-image {
+  width: 100%;
+  max-height: 100px;
+  overflow: hidden;
+}
+
+.cover-image img {
+  width: 100%;
+  height: auto;
+}
+
+.profile-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.profile-image img {
+  width: 100px;
+}
+
+.Edit-button button {
+  border: none;
+  width: 100px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  color: var(--button-text-color);
+  background-color: var(--button-active-background);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Edit-button button:hover {
+  background-color: var(--button-hover-background);
+  transform: scale(1.15);
+  box-shadow: 0px 4px 10px var(--shined-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+.profile-image img {
+  animation: flip 2s ease-in-out;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+
+.profile-input-box input {
+    box-shadow: none !important;
+    border: none;
+}

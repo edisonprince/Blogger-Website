@@ -1,0 +1,143 @@
+.Dropdown-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: auto;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.Dropdown-container select {
+  border: none;
+  background-color: transparent;
+  color: var(--text-color);
+  border: none;
+}
+
+.Dropdown-container select:focus {
+  outline: none;
+}
+
+#FilterType {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border-color);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#FilterType:hover {
+  background-color: var(--hover-background);
+  color: var(--hover-color);
+}
+
+#FilterType option {
+  background-color: var(--background-color);
+  font-size: 20px;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+
+
+.metrics span {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.Manage-Button {
+  padding: 10px;
+}
+
+.Manage-Button button {
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.Manage-Button button:hover {
+  background-color: var(--hover-background);
+  color: var(--hover-color);
+}
+
+.card-data {
+  cursor: pointer;
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.checkbox-container input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  size: 50px !important;
+}
+
+.checkbox-container span {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.checkbox-container input[type="checkbox"] {
+  cursor: pointer;
+}
+.checkbox-container input[type="checkbox"]:checked + span {
+  background-color: var(--background-color) !important;
+  border-color: var(--text-color) !important;
+}
+
+.card-data:hover {
+  background-color: var(--hover-background) !important;
+  color: var(--hover-color) !important;
+  transform: scale(1.01);
+  box-shadow: 0px 4px 10px var(--shined-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .card-data {
+    flex-wrap: wrap;
+  }
+
+  .metrics {
+    justify-content: flex-end;
+    margin-top: 5px;
+    order: 2;
+    width: 100%;
+  }
+
+  .card-data .card-body {
+    width: 100%;
+    order: 1;
+  }
+
+  .card-title {
+    font-size: 1rem;
+  }
+
+  .metrics span {
+    font-size: 0.85rem;
+  }
+}

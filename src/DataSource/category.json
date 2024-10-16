@@ -1,0 +1,59 @@
+[
+    {
+      "categoryid": 1,
+      "title ": "Entertainment",
+      "description": "Entertainment",
+      "created": {
+        "Date": "2022-01-01T00:00:00.000Z",
+        "cratedBy": 1
+      },
+      "updated": {
+        "Date": "2022-01-01T00:00:00.000Z",
+        "updatedBy": 1
+      },
+      "deleted": {
+        "Date": "2022-01-01T00:00:00.000Z",
+        "deletedBy": 1
+      },
+      "status": false,
+      "id": "7b8b"
+    },
+    {
+      "categoryid": 2,
+      "title ": "Sports",
+      "description": "Sports",
+      "created": {
+        "Date": "2022-01-01T00:00:00.000Z",
+        "cratedBy": 1
+      },
+      "updated": {
+        "Date": "2022-01-01T00:00:00.000Z",
+        "updatedBy": 1
+      },
+      "deleted": {
+        "Date": "2022-01-01T00:00:00.000Z",
+        "deletedBy": 1
+      },
+      "status": false,
+      "id": "03de"
+    },
+    {
+      "categoryid": 3,
+      "title ": "Technology",
+      "description": "Technology",
+      "created": {
+        "Date": "2022-01-01T00:00:00.000Z",
+        "cratedBy": 1
+      },
+      "updated": {
+        "Date": "2022-01-01T00:00:00.000Z",
+        "updatedBy": 1
+      },
+      "deleted": {
+        "Date": "2022-01-01T00:00:00.000Z",
+        "deletedBy": 1
+      },
+      "status": false,
+      "id": "5474"
+    }
+  ]

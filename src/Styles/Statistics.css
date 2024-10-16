@@ -1,0 +1,90 @@
+/* .card {
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .card .fa {
+    color: #6c757d; 
+  }
+  
+  .badge {
+    font-size: 1rem;
+    padding: 0.5em 0.75em;
+  }
+  
+  .text-center span {
+    display: block;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .card.d-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .d-flex.align-items-center {
+      justify-content: center;
+    }
+  }
+  
+
+.item-border-right {
+    border-right: 1px solid #ddd; 
+  }
+  
+  @media (max-width: 768px) {
+    .item-border-right {
+      border-right: none;
+    }
+  }
+  
+  .icon-style {
+    font-size: 1.5rem;
+    color: #007bff; 
+  }
+   */
+
+.statistics-container {
+  background: var(--background-color);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.statistics-card {
+  /* background: linear-gradient(135deg, var(--button-background) 0%, var(--text-color) 100%); */
+  background: var(--body-background);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.stat-value {
+  font-size: 2em;
+}
+
+.latest-post-card {
+  background: var(--body-background);
+  color: var(--text-color);
+}
+
+.post-thumbnail {
+  width: 70px;
+  height: 70px;
+}
+
+.weekly-views-card {
+  background: var(--body-background);
+}
+
+
+
+.table-row th, .table-row td {
+  background: var(--body-background);
+  color: var(--text-color) !important;
+}
+
+
+.table-row:hover th, .table-row:hover td {
+  background-color: var(--hover-background);
+  color: var(--hover-color) !important;
+}
