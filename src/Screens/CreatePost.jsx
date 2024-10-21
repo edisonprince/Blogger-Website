@@ -39,8 +39,6 @@ function CreatePost() {
 
   const submit = async (e) => {
     e.preventDefault();
-
-    // Form validations
     if (post.title.length < 5) {
       showToast('The title should have a minimum of 5 characters.', 'Error');
       return;
@@ -68,8 +66,8 @@ function CreatePost() {
       status: true,
       publishedBy: null,
       isPublished: false,
-      comments: location.state && location.state.post ? location.state.post.comments : 0,
-      likes: location.state && location.state.post ? location.state.post.likes : 0,
+      comments: location.state && location.state.post ? location.state.post.comments : [],
+      likes: location.state && location.state.post ? location.state.post.likes : [],
       views: location.state && location.state.post ? location.state.post.views : 0,
       deleted: {
         Date: null,

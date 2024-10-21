@@ -16,6 +16,7 @@ import { ToastProvider } from "./Contexts/ToastContext";
 import Profile from "./Screens/Profile";
 import BlogPosts from "./Screens/BlogPost";
 import BlogPostView from "./Screens/BlogPostView";
+import CommonBlogView from "./Screens/CommonBlogView";
 function App() {
   return (
     <ThemeProvider>
@@ -55,7 +56,7 @@ function App() {
               path="/ViewBlog"
               element={
                 // <PrivateRoute>
-                  <BlogPosts />
+                  <CommonBlogView />
                 // </PrivateRoute>
               }
             />
@@ -68,14 +69,14 @@ function App() {
                 // </PrivateRoute>
               }
             />
-            {/* <Route
-              path="/BlogPosts"
+            <Route
+              path="/CommonBlogView"
               element={
                 // <PrivateRoute>
                   <BlogPosts />
                 // </PrivateRoute>
               }
-            /> */}
+            />
             <Route
               path="/BlogPostView"
               element={
@@ -105,7 +106,8 @@ const HeaderCondition = () => {
     location.pathname === "/Profile" ||
     location.pathname === "/Home" ||
     location.pathname === "/BlogPostView"||
-    location.pathname === "/BlogPosts"
+    location.pathname === "/BlogPosts" ||
+    location.pathname === "/CommonBlogView"
 
   ) {
     return <Header />;

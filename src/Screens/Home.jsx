@@ -68,24 +68,24 @@ function Home() {
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
                                     <img src="https://www.blogger.com/about/img/social/facebook-1200x630.jpg" className="d-block w-100" alt="..." />
-                                    <div className="carousel-caption d-none d-md-block">
+                                    {/* <div className="carousel-caption d-none d-md-block">
                                         <h5>Explore the World of Blogging</h5>
                                         <p>Unlock your potential as a blogger and share your unique voice with the world. Whether you're a seasoned writer or just starting, explore tips and insights to create compelling content that captivates your audience.</p>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="carousel-item">
                                     <img src="https://www.searchenginejournal.com/wp-content/uploads/2020/08/7-ways-a-blog-can-help-your-business-right-now-5f3c06b9eb24e-1280x720.png" className="d-block w-100" alt="..." />
-                                    <div className="carousel-caption d-none d-md-block">
+                                    {/* <div className="carousel-caption d-none d-md-block">
                                         <h5>Build Your Online Presence</h5>
                                         <p>Learn the secrets to growing your blog's reach and building a loyal readership. Discover the best practices for SEO, social media engagement, and creating posts that resonate with your community.</p>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="carousel-item">
                                     <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/06/How_To_Start_A_Blog_-_article_image.jpg" className="d-block w-100" alt="..." />
-                                    <div className="carousel-caption d-none d-md-block">
+                                    {/* <div className="carousel-caption d-none d-md-block">
                                         <h5>Join a Thriving Community</h5>
                                         <p>Connect with like-minded bloggers and become a part of a vibrant community. Share your stories, exchange ideas, and gain inspiration from other creative voices, all while building your personal brand.</p>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <button className="carousel-control-prev" type="button" data-bs-target="#carousalCaptions" data-bs-slide="prev">

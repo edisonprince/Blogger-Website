@@ -127,7 +127,11 @@ const Posts = ({ isSliderOpen }) => {
               ) : <button onClick={manageButton}>Delete</button>
               }
             </div>
-          ) : null}
+          ) : (
+            <div className='col-6 d-flex  justify-content-end Manage-Button'>
+              <button onClick={() => navigate('/NewPost')}>Create Post</button>
+            </div>
+          )}
 
         </div>
         <div className="row">
@@ -153,10 +157,10 @@ const Posts = ({ isSliderOpen }) => {
                           <i className="bi bi-eye me-1"></i> {post.views}
                         </span>
                         <span>
-                          <i className="bi bi-chat-left-text me-1"></i> {post.comments}
+                          <i className="bi bi-chat-left-text me-1"></i> {post.comments.length}
                         </span>
                         <span>
-                          <i className="bi bi-hand-thumbs-up"></i> {post.likes}
+                          <i className="bi bi-hand-thumbs-up"></i> {post.likes.length}
                         </span>
                       </div>
                     </div>

@@ -5,7 +5,7 @@ import { GetBlogPosts, LikePost } from '../Service/ApiService';
 import Spinner from '../Components/Spinner';
 import { useToast } from '../Contexts/ToastContext';
 import { Modal, Button } from 'react-bootstrap';
-const BlogPosts = () => {
+const CommonBlogView = () => {
     const navigate = useNavigate();
     const { showToast } = useToast();
     const user = JSON.parse(localStorage.getItem("user")) || '';
@@ -19,7 +19,7 @@ const BlogPosts = () => {
         const fetchData = async () => {
             setLoading(true);
             try {
-                const userId = user?.uid || '';
+                const userId = '';
                 const response = await GetBlogPosts(userId, currentPage, postsPerPage);
 
                 if (response.status === 'success') {
@@ -242,4 +242,4 @@ const BlogPosts = () => {
     );
 };
 
-export default BlogPosts;
+export default CommonBlogView;

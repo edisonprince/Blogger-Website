@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import '../Styles/BlogPostView.css';
 import Spinner from '../Components/Spinner';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { GetBlogPostView } from '../Service/ApiService';
+import { CommentPost, GetBlogPostView } from '../Service/ApiService';
 import { useToast } from '../Contexts/ToastContext';
 
 function BlogPostView() {
@@ -19,6 +19,9 @@ function BlogPostView() {
     const [showModal, setShowModal] = useState(false);
     const [imageUrl, setImageUrl] = useState('');
     const [loading, setLoading] = useState(true);
+
+    const [comments, setComments] = useState([]);
+    const [newComment, setNewComment] = useState('');
 
     useEffect(() => {
         if (!id) {
@@ -40,12 +43,13 @@ function BlogPostView() {
                     const data = response;
                     console.log(data.categoryData);
                     console.log(data.postData);
+                    console.log(data.postData.comments);
 
                     setRelatedPosts(data.categoryData.slice(0, 2));
                     setPost(data.postData);
                     setFirstName(data.firstName);
-                } else {
-                    showToast(response.message || 'Failed to fetch post data', 'error');
+                    
+                    setComments(data.postData.comments || []);
                 }
             } catch (error) {
                 console.error('Error fetching the post:', error);
@@ -60,31 +64,41 @@ function BlogPostView() {
         fetchPost();
     }, []);
 
-
-    // useEffect(() => {
-    //     if (post && post.category) {
-    //         const fetchRelatedPosts = async () => {
-    //             try {
-    //                 const response = await fetch(`http://localhost:5000/posts?category=${post.category}`);
-    //                 const data = await response.json();
-    //                 console.log(data);
-    //                 console.log(user.uid);
-
-    //                 const related = ddataata
-    //                     .filter((p) => p.id !== post.id && p.created?.createdBy == user.uid)
-    //                     .slice(0, 3);
-
-    //                 setRelatedPosts(related);
-    //             } catch (error) {
-    //                 console.error('Error fetching related posts:', error);
-    //             }
-    //         };
-
-    //         fetchRelatedPosts();
-    //     }
-    // }, [post]);
-
-
+    const commentSubmit = async (e) => {
+        e.preventDefault();
+    
+        if (newComment.trim()) {
+            const commentData = {
+                postId: post.id,
+                uid: user.uid || 'Anonymous', 
+                commentText: newComment,
+            };
+    
+            try {
+                const response = await CommentPost(commentData.postId, commentData.uid, commentData.commentText);
+    
+                if (response.status === "success") {
+  
+                    setComments([...comments, {
+                        id: response.commentId, 
+                        userName: user.firstName || 'Anonymous',
+                        content: newComment,
+                        createdDate: new Date().toLocaleString(),
+                    }]);
+                    setNewComment('');
+                    showToast(response.message, 'success');
+                } else {
+                    showToast(response.message || 'Failed to add comment', 'error');
+                }
+            } catch (error) {
+                console.error("Error submitting comment:", error);
+                showToast('Failed to add comment', 'error');
+            }
+        } else {
+            showToast('Comment cannot be empty', 'error');
+        }
+    };
+    
 
     const ImageModal = (image) => {
         setImageUrl(image);
@@ -140,6 +154,34 @@ function BlogPostView() {
 
                             <h3 className="fw-bold">Content :</h3>
                             <p>{post.content}</p>
+                            <div className="comments-section mt-5">
+                                <h4>Comments</h4>
+                                {comments.length > 0 ? (
+                                    comments.map((comment) => (
+                                        <div key={comment.uid} className="comment mt-3">
+                                            <p><strong>{comment.userName}</strong> <span className="text-muted">on {comment.createdAt}</span></p>
+                                            <p>{comment.content}</p>
+                                        </div>
+                                    ))
+                                ) : (
+                                    <p>No comments yet. Be the first to comment!</p>
+                                )}
+
+                                <form onSubmit={commentSubmit} className="mt-3">
+                                    <div className="form-group">
+                                        <textarea
+                                            className="form-control"
+                                            rows="3"
+                                            placeholder="Add a comment..."
+                                            value={newComment}
+                                            onChange={(e) => setNewComment(e.target.value)}
+                                        />
+                                    </div>
+                                    <div className='travel-landing-page-button-create-post'>
+                                        <button type="submit" className=" mt-2">Post Comment</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
 
                         <div className="col-12 col-lg-4 blog-post-related mb-4">

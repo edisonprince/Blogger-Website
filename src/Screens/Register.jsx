@@ -129,8 +129,8 @@ function Register() {
             followers: 0,
             following: 0,
             posts: 0,
-            comments: 0,
-            likes: 0,
+            comments: [],
+            likes: [],
             views: 0,
             createdDate: new Date().toISOString()
         };

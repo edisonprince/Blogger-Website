@@ -1,12 +1,15 @@
 .toast {
-  background-color: var(--shined-background) !important;
+  background-color: var(--body-background) !important;
   color: var(--text-color) !important;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   transition: transform 0.4s ease-in-out;
   overflow: hidden;
-  position: relative;
+  position: fixed; /* Use fixed positioning */
   z-index: 6000;
+  right: 20px; /* Position toast on the right */
+  top: 20px; /* Position toast near the top */
+  max-width: 300px; /* Set a max-width for better appearance */
 }
 
 .toast-header {
@@ -46,10 +49,10 @@
 
 @media (max-width: 576px) {
   .toast {
-    top: 100%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 300px;
+    width: 100%; 
+    left: 45%; 
+    transform: translate(-50%, 0); 
+    top: 10px; 
+    max-width: none;
   }
 }

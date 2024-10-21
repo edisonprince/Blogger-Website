@@ -200,3 +200,54 @@ export const CreatePost = async (datas) => {
     }
 };
 
+
+export const LikePost = async (postId, uid) => {
+    try {
+        //   const data = encryptData({ id: postId, uid }, secretKey);
+        const data = { id: postId, uid: uid };
+
+        const response = await fetch(`${BASE_URL}/LikePosts`, {
+            method: 'POST',
+            headers: Header,
+            body: JSON.stringify({ data })
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.message || 'Like post failed');
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error("Post Like Error:", error);
+        throw error;
+    }
+};
+
+
+export const CommentPost = async (postId, uid, commentText) => {
+    try {
+        const data = { id: postId, uid, commentText };
+
+        const response = await fetch(`${BASE_URL}/UpdateComments`, {
+            method: 'POST',
+            headers: Header,
+            body: JSON.stringify({ data })
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.message || 'Failed to add comment');
+        }
+
+        return await response.json();
+    } catch (error) {
+        console.error("Comment Post Error:", error);
+        throw error;
+    }
+};
+
+
+
+
+
